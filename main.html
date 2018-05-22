@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OnMyOwn</title>
+        <style>
+            @media (min-width: 1000px) {
+                h1::before {
+                    content: "Windows is wide"
+              }
+            }
+            @media (max-width: 999px) {
+                h1::before {
+                    content: "Good for different devices"
+              }
+            }
+            @media (min-width: 500px) {
+              body {
+                background-color: #8db3ef;
+              }
+            }
+            @media (max-width: 499px) {
+              body {background-color: #f799ef;
+              }
+            }
+            @media print {
+                .unknown {
+                    display: none;  <!-- не отображается при печати -->
+                }
+              }
+            #text {
+              font-size: 24px;
+              background-color: #c7a3ff;
+              }
+            p::selection {
+              color: red;
+              background-color: yellow;
+              }
+        </style>
+    </head>
+    <body>
+          <div id=paragraph>
+            <h2><a href="#hheader">Computer Scince is awesome</a></h2>
+          </div>
+          <div id=text>
+            <p>At times one remains faithful to a cause only because its opponents
+              do not cease to be insipid. </p>
+          </div>
+            <h2> Only sick music makes money today. </h2>
+
+          <div id=hheader>
+            <ul>
+              <li>The visionary lies to himself, the liar only to others.</li>
+              <li>There are no facts, only interpretations.</li>
+              <li class=unknown>To forget one's purpose is the commonest form of stupidity.</li>
+              <li class=unknown>You need chaos in your soul to give birth to a dancing star.</li>
+
+              <form>
+
+                <input name="name" type="text" placeholder="Name">
+                <input name="name" type="number" placeholder="Age">
+
+              </form>
+
+              <h1></h1>
+          </div>
+    </body>
+
+</html>
